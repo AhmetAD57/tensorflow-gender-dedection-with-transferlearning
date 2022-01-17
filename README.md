@@ -1,4 +1,6 @@
 # Tensorflow Gender Dedection with Transfer Learning
+<img src="./images/banner.png"/>
+
 
 ## Used Tools
 - TensorFlow, TensorBoard
@@ -31,7 +33,7 @@ python cinsiyet_algila.py
 
 ## Screenshot
 <p align="center">
-  <img src="./1.png" width="85%"/>
+  <img src="./images/1.png" width="85%"/>
 </p>
 
 
