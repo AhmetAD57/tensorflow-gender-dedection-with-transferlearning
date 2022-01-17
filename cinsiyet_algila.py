@@ -1,31 +1,25 @@
 #Genel
-import sys, os, math, random, glob, shutil, subprocess, webbrowser
+import sys, os, math, random, glob, subprocess, webbrowser
 from distutils.dir_util import copy_tree
 
 #TensorFlow
 import tensorflow as tf
 import tensorflow.keras
-from tensorflow.keras.applications import vgg16
 
 from tensorflow.keras.models import Model
 from tensorflow.keras.layers import Dense
 from tensorflow.keras.applications import VGG16, VGG19
 
-from tensorflow.keras.preprocessing import image
-from tensorflow.keras.preprocessing.image import ImageDataGenerator, array_to_img, img_to_array, load_img
-
+from tensorflow.keras.preprocessing.image import ImageDataGenerator, img_to_array, load_img
 from tensorflow.keras.callbacks import TensorBoard
 
-from tensorflow.keras.applications.vgg16 import preprocess_input, decode_predictions
-
 #PyQt5
-from PyQt5 import QtWidgets, QtCore, QtGui
+from PyQt5 import QtWidgets, QtGui
 from tasarim import Ui_MainWindow
-from PyQt5.QtWidgets import QFileDialog, QMessageBox
+from PyQt5.QtWidgets import QFileDialog
 
 #Yardımcı
-from sklearn.metrics import classification_report, confusion_matrix, roc_curve, auc, roc_auc_score
-from sklearn.preprocessing import LabelBinarizer
+from sklearn.metrics import classification_report, confusion_matrix
 import matplotlib.pyplot as plt
 import numpy as np
 import itertools
@@ -36,7 +30,6 @@ class App(QtWidgets.QMainWindow):
         super(App, self).__init__()
         self.ui=Ui_MainWindow()
         self.ui.setupUi(self)
-
 
         self.dataset=""
         self.aktif_dataset=""
@@ -49,8 +42,6 @@ class App(QtWidgets.QMainWindow):
         self.select_c=0
         self.count_da_pictures()
         
-        
-
         self.secili_model="AlexNet"
         self.model_adi=""
         self.epochs=60
@@ -540,21 +531,6 @@ class App(QtWidgets.QMainWindow):
         plt.xlabel('Predicted label')
         #plt.show()
         plt.savefig("Plts/"+self.model_adi+".png")
-
-       
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #Pencereyi göstermek için
 def pencere():
