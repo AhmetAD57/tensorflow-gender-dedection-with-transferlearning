@@ -31,7 +31,7 @@ python cinsiyet_algila.py
 
 ## Screenshot
 <p align="center">
-  <img src="./images/1.png" width="85%"/>
+  <img src="./1.png" width="85%"/>
 </p>
 
 
