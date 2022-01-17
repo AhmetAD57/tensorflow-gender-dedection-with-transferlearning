@@ -29,10 +29,9 @@ python cinsiyet_algila.py
 > ⚠️ For more details: [Report](./report.pdf)
 
 
-## Screenshots
+## Screenshot
 <p align="center">
   <img src="./images/1.png" width="85%"/>
-  <img src="./images/2.png" width="85%"/>
 </p>
 
 
